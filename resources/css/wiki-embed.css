@@ -267,7 +267,7 @@ table.navbox th {
 */
 div.listenlist {
     background:
-        url("http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png");
+        url("//upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png");
     padding-left: 40px;
 }
 
@@ -305,7 +305,7 @@ div.medialist ul li li {
 #mw_content  a[href$=".PDF"].external, 
 #mw_content  a[href*=".PDF?"].external, 
 #mw_content  a[href*=".PDF#"].external {
-    background: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif") center right no-repeat;
+    background: url("//upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif") center right no-repeat;
     padding-right: 16px;
 }
 
@@ -313,7 +313,7 @@ div.medialist ul li li {
    is used (notably Template:PDFlink). This works in IE, unlike the above. */
 #content span.PDFlink a,
 #mw_content span.PDFlink a {
-    background: url("http://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif") center right no-repeat;
+    background: url("//upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif") center right no-repeat;
     padding-right: 17px;
 }
 
@@ -854,14 +854,16 @@ a.NavToggle {
 
 /* Styling for Template:Quote */
 blockquote.templatequote { 
-     margin-top: 0; 
+    margin-top: 0; 
 }
+
 blockquote.templatequote div.templatequotecite { 
     line-height: 1em;
     text-align: left;
     padding-left: 2em;
     margin-top: 0;
 }
+
 blockquote.templatequote div.templatequotecite cite {
     font-size: 85%;
 }
@@ -917,10 +919,12 @@ sup, sub {
 div.thumb {
     border: none;
 }
+
 div.tright {
     border: none;
     margin: 0.5em 0 0.8em 1.4em;
 }
+
 div.tleft {
     border: none;
     margin: 0.5em 1.4em 0.8em 0;
@@ -936,11 +940,13 @@ div.thumb img.thumbimage {
 #content .gallerybox div.thumb {
     background-color: #F9F9F9;   /* Light gray padding */
 }
+
 /* Put a chequered background behind images, only visible if they have transparency */
 .gallerybox .thumb img,
 #file img {
-    background: white url("http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;
+    background: white url("//upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;
 }
+
 /* But not on articles, user pages, portals or with opt-out. */
 .ns-0 .gallerybox .thumb img,
 .ns-2 .gallerybox .thumb img,
@@ -949,6 +955,18 @@ div.thumb img.thumbimage {
     background: white;
 }
 
+.wiki-embed .gallery {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallerybox {
+	list-style: none;
+	float: left;
+	text-align: center;
+}
 /* Prevent floating boxes from overlapping any category listings,
    file histories, edit previews, and edit [Show changes] views */
 #mw-subcategories, #mw-pages, #mw-category-media, 
@@ -964,9 +982,9 @@ div.thumb img.thumbimage {
 
 /* Styling for Abuse Filter tags */
 .mw-tag-markers {
- font-family:sans-serif;
- font-style:italic;
- font-size:90%;
+ font-family: sans-serif;
+ font-style: italic;
+ font-size: 90%;
 }
 
 /* Fix so <tt>, <code> and <pre> tags get normal text size also in 
@@ -975,22 +993,19 @@ tt, code, pre {
     font-family: monospace, sans-serif;
 }
 
-
 /* </source> */
-span.alert{
-	color:red;
+span.alert {
+	color: red;
 	background: #FFF;
-	margin-bottom:10px;
+	margin-bottom: 10px;
 	display: block;
 }
-
 
 /* via :http://bits.wikimedia.org/skins-1.5/monobook/main.css?257z33
 */
 /*
 ** content styles
 */
-
 #toc,
 .toc,
 .mw-warning {
@@ -999,6 +1014,7 @@ span.alert{
 	padding: 5px;
 	font-size: 95%;
 }
+
 #toc h2,
 .toc h2 {
 	display: inline;
@@ -1007,12 +1023,14 @@ span.alert{
 	font-size: 100%;
 	font-weight: bold;
 }
+
 #toc #toctitle,
 .toc #toctitle,
 #toc .toctitle,
 .toc .toctitle {
 	text-align: center;
 }
+
 #toc ul,
 .toc ul {
 	list-style-type: none;
@@ -1021,10 +1039,12 @@ span.alert{
 	padding-left: 0;
 	text-align: left;
 }
+
 #toc ul ul,
 .toc ul ul {
 	margin: 0 0 0 2em;
 }
+
 #toc .toctoggle,
 .toc .toctoggle {
 	font-size: 94%;
@@ -1043,25 +1063,20 @@ div.floatright, table.floatright {
 	position: relative;
 	margin: 0 0 .5em .5em;
 	border: 0;
-/*
-	border: .5em solid white;
-	border-width: .5em 0 .8em 1.4em;
-*/
 }
+
 div.floatright p { font-style: italic; }
+
 div.floatleft, table.floatleft {
 	float: left;
 	clear: left;
 	position: relative;
 	margin: 0 .5em .5em 0;
 	border: 0;
-/*
-	margin: .3em .5em .5em 0;
-	border: .5em solid white;
-	border-width: .5em 1.4em .8em 0;
-*/
 }
+
 div.floatleft p { font-style: italic; }
+
 /* thumbnails */
 div.thumb {
 	margin-bottom: .5em;
@@ -1069,6 +1084,7 @@ div.thumb {
 	border-color: white;
 	width: auto;
 }
+
 div.thumbinner {
 	border: 1px solid #ccc;
 	padding: 3px !important;
@@ -1077,9 +1093,11 @@ div.thumbinner {
 	text-align: center;
 	overflow: hidden;
 }
+
 html .thumbimage {
 	border: 1px solid #ccc;
 }
+
 html .thumbcaption {
 	border: none;
 	text-align: left;
@@ -1087,30 +1105,37 @@ html .thumbcaption {
 	padding: 3px !important;
 	font-size: 94%;
 }
+
 div.magnify {
 	float: right;
 	border: none !important;
 	background: none !important;
 }
-div.magnify a, div.magnify img {
+
+div.magnify a,
+div.magnify img {
 	display: block;
 	border: none !important;
 	background: none !important;
 }
+
 div.tright {
 	clear: right;
 	float: right;
 	border-width: .5em 0 .8em 1.4em;
 }
+
 div.tleft {
 	float: left;
 	clear: left;
 	margin-right: .5em;
 	border-width: .5em 1.4em .8em 0;
 }
+
 img.thumbborder {
 	border: 1px solid #dddddd;
 }
+
 .hiddenStructure {
 	display: none;
 }
@@ -1131,6 +1156,7 @@ table.rimage {
 	margin-bottom: 1em;
 	text-align: center;
 }
+
 .toccolours {
 	border: 1px solid #aaa;
 	background-color: #f9f9f9;
@@ -1138,9 +1164,10 @@ table.rimage {
 	font-size: 95%;
 }
 
-.wiki-embed table tr{
+.wiki-embed table tr {
 	vertical-align: top;
 }
+
 /* All tabs should have this styling  */
 .wiki-embed b { font-weight: bold; }
 .wiki-embed i { font-style: italic; }
